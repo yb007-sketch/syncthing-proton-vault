@@ -1,0 +1,13 @@
+[Unit]
+Description=Proton VPN NAT-PMP Port Forwarding Daemon for Syncthing
+After=network.target syncthing.service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/proton-natpmp.py
+Restart=always
+RestartSec=10
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Syncthing Advanced Interactive Hub & 60-Day Retention Vault
+After=network.target syncthing.service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/syncthing-dashboard.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

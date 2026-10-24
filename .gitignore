@@ -1,0 +1,33 @@
+# Secrets, Certificates & Keys
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+.env
+credentials.json
+
+# Syncthing State & Runtime
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.pid
+proton_port.txt
+.stversions/
+.stfolder/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# System & OS
+.DS_Store
+Thumbs.db
+*.swp
+*~

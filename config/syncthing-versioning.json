@@ -1,0 +1,11 @@
+{
+  "versioning": {
+    "type": "trashcan",
+    "params": {
+      "cleanoutDays": "60"
+    },
+    "cleanupIntervalS": 3600,
+    "fsPath": "/path/to/your/Retention_60Days",
+    "fsType": "basic"
+  }
+}

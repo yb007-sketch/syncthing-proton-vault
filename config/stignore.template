@@ -1,0 +1,25 @@
+// ==========================================
+// Optimized Syncthing Android .stignore Template
+// ==========================================
+
+// 1. Android Restricted & System Directories
+// (Android 11+ SELinux prevents reading/writing to /Android/data and /Android/obb)
+(?d)Android
+(?d)LOST.DIR
+
+// 2. Thumbnails, Cache & Hidden OS Indexes
+(?d).thumbnails
+(?d).cache
+(?d)Thumbs.db
+(?d).DS_Store
+(?d)*.tmp
+(?d)*.temp
+
+// 3. Messenger Temporary Cache Folders
+(?d)WhatsApp/.Shared
+(?d)WhatsApp/.trash
+(?d)Telegram/Telegram Video/.temp
+
+// 4. Syncthing Internal Vault Folders
+(?d).stfolder
+(?d).stversions
